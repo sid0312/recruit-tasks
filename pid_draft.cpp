@@ -8,11 +8,13 @@ class pid
  float t; //time
  float max,min;//for pid overshooting
  float o;
- pid(float max,float min)
+ pid(float max1,float min1)
  {
    Kp=0.05;
    Ki=0.000001;
    Kd=0;
+   max=max1;
+   min=min1;
 }
 float calc(float setpoint,float depth)
 {
